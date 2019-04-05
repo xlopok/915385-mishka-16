@@ -1,0 +1,21 @@
+@mixin df {
+  display: flex;
+}
+
+@mixin jcc {
+  justify-content: center;
+}
+
+@mixin pr {
+  position: relative;
+}
+
+@mixin pa {
+  position: absolute;
+}
+
+@mixin clear-list {
+  margin: 0;
+  padding : 0;
+  list-style: none
+}
