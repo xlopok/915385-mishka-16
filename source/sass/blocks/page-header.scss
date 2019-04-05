@@ -12,14 +12,13 @@
 
 .main-nav__toggle {
   border: none;
-  background-image: url('../../img/icon-menu-open.svg');
+  background-image: url("../../img/icon-menu-open.svg");
   width: 20px;
   height: 14px;
   cursor: pointer;
 }
 .site-list {
   @include clear-list;
-
 }
 .site-list__item {
   // border-top: 1px solid #ececec;
@@ -37,11 +36,11 @@
       opacity: 0.3;
     }
 }
+
 .site-list__link {
   text-decoration: none;
   color: $black;
   font-family: $osb;
   line-height: 77px;
   font-size: 17px;
-
 }
