@@ -1,13 +1,13 @@
 .page-header {
   width: 260px;
   margin: 0 auto;
+
   @include pr;
 }
 
 .page-header__logo {
   @include df;
   @include jcc;
-
 }
 
 .main-nav__toggle {
@@ -17,24 +17,30 @@
   height: 14px;
   cursor: pointer;
 }
+
 .site-list {
   @include clear-list;
 }
+
 .site-list__item {
   // border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
+
   @include df;
   @include jcc;
-    &:first-child {
-      border-top: 1px solid #ececec;
-    }
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-    &:active {
-      opacity: 0.3;
-    }
+
+  &:first-child {
+    border-top: 1px solid #ececec;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__link {

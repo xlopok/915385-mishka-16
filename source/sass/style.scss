@@ -12,7 +12,6 @@ body {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   clip-path: inset(100%);
   width: 1px;
   height: 1px;
