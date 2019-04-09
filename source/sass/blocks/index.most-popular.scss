@@ -1,0 +1,69 @@
+.most-popular {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.most-popular__wrap {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.most-popular__header {
+  margin: 0;
+
+  font-family: $osb;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.most-popular__mark {
+  font-family: $osb;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.most-popular__description {
+  color: $gray;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.most-popular__table {
+  width: 100%;
+  color: $gray;
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+
+.product-records__row {
+  height: 37px;
+  border-bottom: 1px solid #ececec;
+}
+
+.product-records__header {
+  padding: 0;
+}
+
+.product-records__value {
+  padding: 0;
+  padding-left: 30px;
+  // border: 1px solid red;
+}
+
+.most-popular__price {
+  color: $gray;
+  font-family: $osb;
+  text-align: center;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}

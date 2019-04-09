@@ -1,5 +1,5 @@
 .page-header {
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
 
   @include pr;
@@ -23,7 +23,6 @@
 }
 
 .site-list__item {
-  // border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
 
   @include df;

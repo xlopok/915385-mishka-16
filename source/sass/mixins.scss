@@ -6,6 +6,16 @@
   justify-content: center;
 }
 
+@mixin aic {
+  align-items: center;
+}
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin pr {
   position: relative;
 }

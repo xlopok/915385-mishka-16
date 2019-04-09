@@ -1,0 +1,73 @@
+.about {
+  @include pr;
+
+  width: 320px;
+  margin: 0 auto;
+
+  &::before {
+    @include pa;
+
+    content: "";
+    background-image: url("../../img/zigzag-line-desktop.png");
+    background-repeat: no-repeat;
+    height: 6px;
+    width: 319px;
+  }
+}
+
+.about__header {
+  margin: 0;
+  margin-left: 30px;
+  padding-top: 33px;
+  font-family: $osb;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 58px;
+}
+
+.about__list {
+  @include clear-list;
+}
+
+.about__list-item {
+  font-family: $osb;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 85px;
+
+  @include pr;
+
+  &::before {
+    @include pa;
+
+    content: "";
+    background-image: url("../../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 60px;
+    height: 40px;
+
+    top: -50px;
+    left: 0;
+  }
+}
+
+.about__list-item--money::before {
+  background-image: url("../../img/icon-feature-money.svg");
+}
+
+.about__list-item--likes::before {
+  background-image: url("../../img/icon-feature-heart.svg");
+}
+
+.about__list-item--knitting::before {
+  background-image: url("../../img/icon-feature-ball.svg");
+}
+
+.about__list-item--rocket::before {
+  background-image: url("../../img/icon-feature-rocket.svg");
+}
+
+.about__list-item--gift-wrap::before {
+  background-image: url("../../img/icon-feature-gift.svg");
+}

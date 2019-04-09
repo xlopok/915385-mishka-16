@@ -1,0 +1,72 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.social__list {
+  @include clear-list;
+  @include df;
+  @include jcc;
+
+  position: relative;
+  // width: 200px;
+  height: 50px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.social__link {
+  position: absolute;
+  text-decoration: none;
+  color: $black;
+  width: 25px;
+  height: 30px;
+
+  &--instagram {
+    background-image: url("../../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 56px;
+  }
+
+  &--facebook {
+    background-image: url("../../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 118px;
+  }
+
+  &--twitter {
+    background-image: url("../../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 170px;
+  }
+}
+
+.copyright {
+  @include df;
+  @include pr;
+  padding-bottom: 30px;
+}
+
+.copyright__text {
+  font-family: $osb;
+  font-size: 19px;
+  padding-left: 39px;
+}
+
+.copyright__link {
+  @include pa;
+
+  background-image: url("../../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  right: 100px;
+  top: -5px;
+}
