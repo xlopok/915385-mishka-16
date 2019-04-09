@@ -3,7 +3,7 @@
 }
 
 .page-footer__wrapper {
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
 }
 
@@ -30,21 +30,21 @@
     background-image: url("../../img/icon-insta.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    left: 56px;
+    left: 61px;
   }
 
   &--facebook {
     background-image: url("../../img/icon-fb.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    left: 118px;
+    left: 124px;
   }
 
   &--twitter {
     background-image: url("../../img/icon-twitter.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    left: 170px;
+    left: 176px;
   }
 }
 
@@ -67,6 +67,6 @@
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;
-  right: 100px;
+  right: 40px;
   top: -5px;
 }

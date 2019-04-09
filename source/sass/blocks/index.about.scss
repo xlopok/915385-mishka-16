@@ -34,6 +34,7 @@
   font-size: 17px;
   line-height: 20px;
   margin-bottom: 85px;
+  padding-left: 30px;
 
   @include pr;
 
@@ -48,7 +49,7 @@
     height: 40px;
 
     top: -50px;
-    left: 0;
+    left: 30px;
   }
 }
 
