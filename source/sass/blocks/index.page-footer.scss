@@ -50,7 +50,7 @@
 
 .copyright {
   @include df;
-  @include pr;
+  position: relative;
   padding-bottom: 30px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .copyright__link {
-  @include pa;
+  position: absolute;
 
   background-image: url("../../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;

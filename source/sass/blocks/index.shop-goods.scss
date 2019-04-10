@@ -25,7 +25,7 @@
 }
 
 .shop-goods__list-item {
-  @include pr;
+  position: relative;
   background-color: #63d1bb;
   height: 103px;
 
@@ -39,7 +39,7 @@
   }
 
   &::after {
-    @include pa;
+    position: absolute;
     content: "";
     background-image: url("../../img/icon-interior.svg");
     background-position: 0 0;
@@ -55,7 +55,7 @@
     background-color: #56c3b2;
 
     &::after {
-      @include pa;
+      position: absolute;
       content: "";
       background-image: url("../../img/icon-toy.svg");
       background-position: 0 0;

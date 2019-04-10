@@ -1,12 +1,10 @@
 .about {
-  @include pr;
-
+  position: relative;
   width: 320px;
   margin: 0 auto;
 
   &::before {
-    @include pa;
-
+    position: absolute;
     content: "";
     background-image: url("../../img/zigzag-line-desktop.png");
     background-repeat: no-repeat;
@@ -35,12 +33,10 @@
   line-height: 20px;
   margin-bottom: 85px;
   padding-left: 30px;
-
-  @include pr;
+  position: relative;
 
   &::before {
-    @include pa;
-
+    position: absolute;
     content: "";
     background-image: url("../../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
