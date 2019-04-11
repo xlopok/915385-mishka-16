@@ -1,0 +1,38 @@
+body {
+  font-family: $os;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button {
+  border: 2px solid $gray;
+  text-align: center;
+  width: 100%;
+  display: block;
+  height: 52px;
+  cursor: pointer;
+
+  @include centered;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $gray;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
+}

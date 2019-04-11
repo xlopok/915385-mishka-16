@@ -1,0 +1,93 @@
+.shop-goods {
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  // height: 300px;
+}
+
+.shop-goods__header {
+  margin: 0;
+  text-align: center;
+  z-index: 2;
+
+  font-family: $osb;
+  font-size: 27px;
+  line-height: 30px;
+
+  padding-top: 75px;
+  padding-bottom: 125px;
+}
+
+.shop-goods__list {
+  @include clear-list;
+}
+
+.shop-goods__list-item {
+  position: relative;
+  background-color: #63d1bb;
+  height: 103px;
+
+  @include df;
+  align-items: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #59d5bc;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icon-interior.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 62px;
+    opacity: 0.2;
+    right: 36px;
+    z-index: 1;
+  }
+
+  &--right {
+    background-color: #56c3b2;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/icon-toy.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      opacity: 0.2;
+      right: 27px;
+      z-index: 1;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #46c1ae;
+    }
+  }
+}
+
+.shop-goods__list-link {
+  text-decoration: none;
+  font-family: $osb;
+  font-size: 19px;
+  line-height: 24px;
+  color: $white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.shop-goods__span {
+  width: 110px;
+}
