@@ -68,3 +68,48 @@
 .about__list-item--gift-wrap::before {
   background-image: url("../../img/icon-feature-gift.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: 100%;
+
+    &::before {
+      width: 100%;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      height: 23px;
+      background-repeat: repeat;
+    }
+  }
+
+  .about__wrap {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 430px;
+  }
+
+  .about__list-item {
+    width: 50%;
+    // padding: 0;
+  }
+
+  .about__header {
+    padding-top: 80px;
+    font-size: 43px;
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  // .about__wrap {
+  //   width: 1050px;
+  // }
+  .about__header {
+    font-size: 53px;
+  }
+}
