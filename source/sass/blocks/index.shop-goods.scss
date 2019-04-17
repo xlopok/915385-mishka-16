@@ -112,6 +112,7 @@
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
     position: relative;
+    z-index: 1;
 
     &::after {
       position: absolute;
@@ -135,12 +136,14 @@
   .shop-goods__header-wrap {
     display: flex;
     justify-content: center;
+    padding-top: 160px;
   }
 
   .shop-goods__header {
-    width: 420px;
+    width: 510px;
     font-size: 43px;
     line-height: 50px;
+    padding-top: 0;
   }
 
   .shop-goods__list {

@@ -98,6 +98,15 @@
 
   .page-footer__logo {
     display: block;
+
+    &:hover path,
+    &:focus path {
+      fill: #46c1ae;
+    }
+
+    &:active path {
+      fill: #bde3dd;
+    }
   }
 
   .copyright__text {
