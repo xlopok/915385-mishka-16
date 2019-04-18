@@ -50,6 +50,18 @@
   }
 }
 
+.page-header__free-delivery {
+  display: none;
+}
+
+.page-header__new-collection {
+  display: none;
+}
+
+.page-header__sale {
+  display: none;
+}
+
 .site-list__link {
   text-decoration: none;
   color: $black;
@@ -136,6 +148,26 @@
     flex-wrap: nowrap;
   }
 
+  .page-header__free-delivery {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: #444444;
+    right: 0;
+    bottom: -35px;
+    font-size: 15px;
+    line-height: 24px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .site-list__link {
     line-height: 24px;
     white-space: nowrap;
@@ -215,5 +247,93 @@
     background-image: url("../../img/logo-desktop.svg");
     background-repeat: no-repeat;
     background-position: 0 50%;
+    width: 149px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .site-list {
+    width: 100%;
+  }
+
+  .site-list__item {
+    &--search {
+      order: 3;
+    }
+
+    &--cart {
+      order: 4;
+    }
+
+    &--catalog {
+      order: 1;
+      position: static;
+      width: 220px;
+      justify-content: flex-start;
+    }
+
+    &--form {
+      order: 2;
+      position: static;
+      margin-right: auto;
+    }
+  }
+
+  .site-list__link {
+    &--catalog {
+      font-size: 17px;
+    }
+
+    &--form {
+      font-size: 17px;
+    }
+  }
+
+  .page-header__new-collection {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    left: 0;
+    bottom: -35px;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $osb;
+    color: $black;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-header__sale {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    left: 220px;
+    bottom: -35px;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $osb;
+    color: $black;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
