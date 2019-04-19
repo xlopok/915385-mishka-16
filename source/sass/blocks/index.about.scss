@@ -6,7 +6,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../../img/zigzag-line-desktop.png");
+    background-image: url("../img/zigzag-line-desktop.png");
     background-repeat: no-repeat;
     height: 6px;
     width: 319px;
@@ -38,7 +38,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../../img/icon-feature-flower.svg");
+    background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 60px;
@@ -50,23 +50,23 @@
 }
 
 .about__list-item--money::before {
-  background-image: url("../../img/icon-feature-money.svg");
+  background-image: url("../img/icon-feature-money.svg");
 }
 
 .about__list-item--likes::before {
-  background-image: url("../../img/icon-feature-heart.svg");
+  background-image: url("../img/icon-feature-heart.svg");
 }
 
 .about__list-item--knitting::before {
-  background-image: url("../../img/icon-feature-ball.svg");
+  background-image: url("../img/icon-feature-ball.svg");
 }
 
 .about__list-item--rocket::before {
-  background-image: url("../../img/icon-feature-rocket.svg");
+  background-image: url("../img/icon-feature-rocket.svg");
 }
 
 .about__list-item--gift-wrap::before {
-  background-image: url("../../img/icon-feature-gift.svg");
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -75,7 +75,7 @@
 
     &::before {
       width: 100%;
-      background-image: url("../../img/bg-zigzag-line.svg");
+      background-image: url("../img/bg-zigzag-line.svg");
       height: 23px;
       background-repeat: repeat;
     }

@@ -1,6 +1,6 @@
 .shop-goods {
   background-color: #f9f9f9;
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   // height: 300px;
@@ -51,7 +51,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url("../../img/icon-interior.svg");
+    background-image: url("../img/icon-interior.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     width: 40px;
@@ -67,7 +67,7 @@
     &::after {
       position: absolute;
       content: "";
-      background-image: url("../../img/icon-toy.svg");
+      background-image: url("../img/icon-toy.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
       width: 60px;
@@ -109,7 +109,7 @@
 
   .shop-goods {
     background-color: #f9f9f9;
-    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
     position: relative;
     z-index: 1;
@@ -118,7 +118,7 @@
       position: absolute;
       content: "";
 
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       height: 24px;
       width: 100%;
       bottom: -10px;

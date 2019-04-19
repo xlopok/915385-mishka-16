@@ -27,21 +27,21 @@
   height: 30px;
 
   &--instagram {
-    background-image: url("../../img/icon-insta.svg");
+    background-image: url("../img/icon-insta.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 61px;
   }
 
   &--facebook {
-    background-image: url("../../img/icon-fb.svg");
+    background-image: url("../img/icon-fb.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 124px;
   }
 
   &--twitter {
-    background-image: url("../../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 176px;
@@ -63,7 +63,7 @@
 .copyright__link {
   position: absolute;
 
-  background-image: url("../../img/logo-htmlacademy.svg");
+  background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;

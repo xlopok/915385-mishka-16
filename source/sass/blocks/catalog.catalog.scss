@@ -80,7 +80,7 @@
     content: "";
     width: 20px;
     height: 19px;
-    background-image: url("../../img/icon-cart.svg");
+    background-image: url("../img/icon-cart.svg");
     opacity: 0.2;
     right: 20px;
   }
@@ -96,7 +96,7 @@
     &::after {
       position: absolute;
       content: "";
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       width: 100%;
       height: 20px;
       bottom: 0;
@@ -139,7 +139,7 @@
     &::after {
       position: absolute;
       content: "";
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       width: 100%;
       height: 20px;
       bottom: 0;
