@@ -1,16 +1,26 @@
 .shop-goods {
-  width: 320px;
-  margin: 0 auto;
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   // height: 300px;
+}
+
+.shop-goods__wrap {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.shop-goods__header-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .shop-goods__header {
   margin: 0;
   text-align: center;
   z-index: 2;
+  width: 260px;
 
   font-family: $osb;
   font-size: 27px;
@@ -41,7 +51,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url("../../img/icon-interior.svg");
+    background-image: url("../img/icon-interior.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     width: 40px;
@@ -57,7 +67,7 @@
     &::after {
       position: absolute;
       content: "";
-      background-image: url("../../img/icon-toy.svg");
+      background-image: url("../img/icon-toy.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
       width: 60px;
@@ -90,4 +100,69 @@
 
 .shop-goods__span {
   width: 110px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .shop-goods {
+    background-color: #f9f9f9;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 0;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      height: 24px;
+      width: 100%;
+      bottom: -10px;
+    }
+  }
+
+  .shop-goods__wrap {
+    width: 668px;
+    height: 747px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .shop-goods__header-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+  }
+
+  .shop-goods__header {
+    width: 510px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 0;
+  }
+
+  .shop-goods__list {
+    display: flex;
+  }
+
+  .shop-goods__list-item {
+    width: 50%;
+    height: 120px;
+  }
+
+  .shop-goods__list-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .shop-goods__wrap {
+    width: 1050px;
+  }
 }
