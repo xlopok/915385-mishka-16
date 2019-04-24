@@ -2,7 +2,7 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% -19px;
   // height: 300px;
 }
 
@@ -26,8 +26,8 @@
   font-size: 27px;
   line-height: 30px;
 
-  padding-top: 75px;
-  padding-bottom: 125px;
+  padding-top: 69px;
+  padding-bottom: 121px;
 }
 
 .shop-goods__list {
@@ -95,7 +95,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 36px;
 }
 
 .shop-goods__span {
@@ -136,7 +136,7 @@
   .shop-goods__header-wrap {
     display: flex;
     justify-content: center;
-    padding-top: 160px;
+    padding-top: 154px;
   }
 
   .shop-goods__header {
@@ -164,5 +164,15 @@
 @media (min-width: $desktop-width) {
   .shop-goods__wrap {
     width: 1050px;
+  }
+
+  .shop-goods {
+    margin-bottom: 130px;
+  }
+
+  .shop-goods__header {
+    font-size: 53px;
+    line-height: 57px;
+    width: 100%;
   }
 }

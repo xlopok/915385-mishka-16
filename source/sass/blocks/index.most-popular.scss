@@ -1,7 +1,7 @@
 .most-popular {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 
 .most-popular__wrap {
@@ -16,7 +16,7 @@
   font-size: 25px;
   line-height: 30px;
   margin-top: 30px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .most-popular__mark {
@@ -31,7 +31,8 @@
   color: $gray;
   font-size: 15px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-top: 24px;
+  margin-bottom: 18px;
 }
 
 .most-popular__table {
@@ -45,7 +46,7 @@
 }
 
 .product-records__row {
-  height: 37px;
+  height: 40px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -55,7 +56,7 @@
 
 .product-records__value {
   padding: 0;
-  padding-left: 30px;
+  padding-left: 17px;
   // border: 1px solid red;
 }
 
@@ -64,8 +65,16 @@
   font-family: $osb;
   text-align: center;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 22px;
   margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.most-popular__button {
+  font-size: 17px;
+  font-family: $osb;
+  text-transform: uppercase;
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,7 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 48px;
   }
 
   .most-popular__header {
@@ -95,7 +104,8 @@
   .most-popular__mark {
     text-align: center;
     width: 80px;
-    padding-right: 28px;
+    padding-right: 23px;
+    margin-top: 4px;
     z-index: 2;
   }
 
@@ -103,21 +113,31 @@
     width: 290px;
     margin: 0;
     display: inline-block;
-    margin-top: 55px;
-    margin-bottom: 45px;
+    margin-top: 51px;
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-records__value {
+    padding-left: 0;
   }
 
   .most-popular__table {
     width: 290px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .most-popular__price {
     width: 290px;
+    font-size: 20px;
+    margin-bottom: 35px;
   }
 
   .most-popular__button {
     width: 290px;
+    height: 52px;
+    box-sizing: border-box;
   }
 
   .most-popular__image {
@@ -131,6 +151,7 @@
 @media (min-width: $desktop-width) {
   .most-popular {
     width: 1050px;
+    margin-bottom: 76px;
   }
 
   .most-popular__wrap-header {
@@ -145,14 +166,17 @@
 
   .most-popular__header {
     order: 2;
+    font-size: 53px;
   }
 
   .most-popular__description {
     padding-left: 175px;
+    margin-bottom: 51px;
   }
 
   .most-popular__table {
     margin-left: 175px;
+    margin-bottom: 108px;
   }
 
   .most-popular__price {
