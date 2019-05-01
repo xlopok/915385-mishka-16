@@ -143,8 +143,9 @@
   .most-popular__image {
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 100px;
     z-index: 1;
+    width: 50%;
   }
 }
 
@@ -156,6 +157,10 @@
 
   .most-popular__wrap-header {
     justify-content: flex-start;
+  }
+
+  .most-popular__image {
+    top: -60px;
   }
 
   .most-popular__mark {
