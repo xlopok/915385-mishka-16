@@ -16,6 +16,11 @@ body {
   overflow: hidden;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .button {
   border: 2px solid $gray;
   text-align: center;
