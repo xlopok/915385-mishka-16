@@ -27,24 +27,63 @@
   height: 30px;
 
   &--instagram {
-    background-image: url("../img/icon-insta.svg");
+    // background-image: url("../img/icon-insta.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 61px;
+
+    svg {
+      fill: #231f20;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: #46c1ae;
+    }
+
+    &:active svg {
+      fill: #bde3dd;
+    }
   }
 
   &--facebook {
-    background-image: url("../img/icon-fb.svg");
+    // background-image: url("../img/icon-fb.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 124px;
+
+    svg {
+      fill: #231f20;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: #46c1ae;
+    }
+
+    &:active svg {
+      fill: #bde3dd;
+    }
   }
 
   &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+    // background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 176px;
+
+    svg {
+      fill: #231f20;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: #46c1ae;
+    }
+
+    &:active svg {
+      fill: #bde3dd;
+    }
   }
 }
 
@@ -63,12 +102,25 @@
 .copyright__link {
   position: absolute;
 
-  background-image: url("../img/logo-htmlacademy.svg");
+  // background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;
   right: 40px;
   top: -5px;
+
+  svg {
+    fill: #63d1bb;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    fill: #bde3dd;
+  }
 }
 
 .page-footer__logo {
