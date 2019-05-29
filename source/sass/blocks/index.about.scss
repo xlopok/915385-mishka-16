@@ -31,9 +31,13 @@
   font-family: $osb;
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 83px;
+  margin-bottom: 84px;
   padding-left: 30px;
   position: relative;
+
+  &:last-child {
+    margin-bottom: 55px;
+  }
 
   &::before {
     position: absolute;

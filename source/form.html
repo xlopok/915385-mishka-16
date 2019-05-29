@@ -6,30 +6,30 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- <style>
+    <style>
         HTML {
           background-repeat: no-repeat;
           background-position:  50% 0;
           /* Mobile layout by default */
-          background-image: url( "img/pix/mishka-catalog-mobile.jpg" );
+          background-image: url( "img/pix/mishka-form-mobile.jpg" );
         }
         /* Tablet */
         @media ( min-width: 768px ) {
           HTML {
             /* Tablet layout */
-            background-image: url( "img/pix/mishka-catalog-tablet.jpg" );
+            background-image: url( "img/pix/mishka-form-tablet.jpg" );
           }
         }
         /* Desktop */
         @media ( min-width: 1150px ) {
           HTML {
             /* Desktop layout */
-            background-image: url( "img/pix/mishka-catalog-desktop.jpg" );
+            background-image: url( "img/pix/mishka-form-desktop.jpg" );
           }
         }
       </style>
       <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-      <script src="../node_modules/pixel-glass/script.js"></script> -->
+      <script src="../node_modules/pixel-glass/script.js"></script>
   </head>
   <body>
     <svg style="display:none">
@@ -191,10 +191,92 @@
       <a href="sale.html" class="page-header__sale">Распродажа</a>
     </header>
     <main class="page-main">
+      <h1 class="form__header">Вязание на заказ</h1>
+      <srction class="form">
+        <div class="form__container">
+          <div class="form__wrap">
+            <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <input name="type" type="radio" id="radio-interier" class="input-type visually-hidden" checked>
+            <input name="type" type="radio" id="radio-kid" class="input-type visually-hidden">
+
+            <input name="color" type="checkbox" id="checkbox-white" class="input-color visually-hidden" checked>
+            <input name="color" type="checkbox" id="checkbox-grey" class="input-color visually-hidden" checked>
+            <input name="color" type="checkbox" id="checkbox-tifany" class="input-color visually-hidden">
+            <input name="color" type="checkbox" id="checkbox-black" class="input-color visually-hidden">
+            <input name="color" type="checkbox" id="checkbox-pink" class="input-color visually-hidden">
+            <input name="color" type="checkbox" id="checkbox-orange" class="input-color visually-hidden">
+
+            <form action="#" class="form__main">
+              <p class="form__type labels">
+                <span class="labels__header">Тип</span>
+                <span class="labels__wrap">
+                  <label class="labels__type labels__type--interier" for="radio-interier">Аксессуар для интерьера</label>
+                  <label class="labels__type labels__type--kid" for="radio-kid">Детская игрушка</label>
+                </span>
+              </p>
+
+              <div class="form__color labels">
+                <div class="form__color-wrap">
+                  <span class="labels__header labels__header--color">Цвет</span>
+                  <div class="labels__color-wrap">
+                    <label class="labels__color labels__color--white" for="checkbox-white">Белый</label>
+                    <label class="labels__color labels__color--grey" for="checkbox-grey">Серый</label>
+                    <label class="labels__color labels__color--tifany" for="checkbox-tifany">«Тиффани»</label>
+                    <label class="labels__color labels__color--black" for="checkbox-black">Черный</label>
+                    <label class="labels__color labels__color--pink" for="checkbox-pink">Розовый</label>
+                    <label class="labels__color labels__color--orange" for="checkbox-orange">Оранжевый</label>
+                  </div>
+                </div>
+              </div>
+
+              <p class="form__personal labels personal">
+                <span class="labels__header labels__header--personal">ФИО</span>
+                <span class="labels__personal-wrap">
+                  <span class="personal__wrap">
+                    <label for="personal-name" class="labels__personal">Имя:</label>
+                    <input class="input-personal" id="personal-name" type="text" placeholder="Введите ваше имя*">
+                  </span>
+                  <span class="personal__wrap">
+                    <label for="personal-lastname" class="labels__personal">Фамилия:</label>
+                    <input class="input-personal" id="personal-lastname" type="text" placeholder="Укажите фамилию*">
+                  </span>
+                  <span class="personal__wrap">
+                    <label for="personal-sirname" class="labels__personal">Отчество:</label>
+                    <input class="input-personal" id="personal-sirname" type="text" placeholder="Отчество, если желаете">
+                  </span>
+                </span>
+              </p>
+
+              <div class="form_contacts-wrap">
+                <div class="form__phone labels">
+                  <span class="labels__header labels__header--tel">Тел</span>
+                  <input class="input-personal input-personal--tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                </div>
+
+
+                <div class="form__email labels">
+                  <span class="labels__header labels__header--email">e-mail</span>
+                  <input class="input-personal input-personal--email" type="text" placeholder="Ваш Email*">
+                </div>
+              </div>
+
+              <p class="form__addition labels">
+                <span class="labels__header labels__header--addition">Доп</span>
+                <textarea class="form__textarea" name="textarea" id="textarea" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </p>
+
+              <div class="form__submit-wrap">
+                <p class="form__required">*Поля обязательны для заполнения</p>
+                <input class="form__send button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+              </div>
+            </form>
+          </div>
+        </div>
+      </srction>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
+        <a href="index.html" class="page-footer__logo">
           <svg width="101.615px" height="34.056px">
               <use xlink:href="#icon-footer-logo"></use>
           </svg>

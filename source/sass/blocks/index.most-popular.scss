@@ -65,8 +65,8 @@
   font-family: $osb;
   text-align: center;
   margin: 0;
-  margin-top: 22px;
-  margin-bottom: 30px;
+  margin-top: 16px;
+  margin-bottom: 28px;
   font-size: 17px;
 }
 
@@ -75,6 +75,7 @@
   font-family: $osb;
   text-transform: uppercase;
   width: 260px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
