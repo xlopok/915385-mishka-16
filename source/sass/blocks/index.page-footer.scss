@@ -139,11 +139,11 @@
   display: none;
 
   &:hover svg,
-  &:focus svg  {
+  &:focus svg {
     fill: #46c1ae;
   }
 
-  &:active svg  {
+  &:active svg {
     fill: #bde3dd;
   }
 }

@@ -24,7 +24,7 @@
     position: absolute;
     content: "";
 
-    background-image: url(../img/icon-video.svg);
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     width: 32px;
     height: 32px;
@@ -65,15 +65,13 @@
 .production__button-feedback {
   width: 190px;
   height: 52px;
-  box-sizing: border-box;
   margin: 0 auto;
-  color: $black;
   text-decoration: none;
   text-transform: uppercase;
   font-family: $osb;
   font-size: 18px;
   box-sizing: border-box;
-  color: #444;
+  color: #444444;
   margin-bottom: 32px;
 }
 
@@ -81,6 +79,7 @@
   .production {
     width: 668px;
   }
+
   .production__wrap {
     width: 668px;
     margin-bottom: 63px;

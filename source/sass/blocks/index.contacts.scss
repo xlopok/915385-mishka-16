@@ -21,7 +21,7 @@
 }
 
 .contacts__text {
-  color: #444;
+  color: #444444;
   font-size: 15px;
   line-height: 30px;
   display: flex;
@@ -36,7 +36,7 @@
 
 .contacts__email-link {
   text-decoration: none;
-  color: #444;
+  color: #444444;
 
   &:hover,
   &:focus {
@@ -49,7 +49,6 @@
 }
 
 .contacts__description {
-
   &--email {
     border-bottom: 1px solid #62d1ba;
   }
@@ -69,13 +68,12 @@
 .contacts__button-feedback {
   width: 260px;
   margin: 0 auto;
-  color: $black;
   text-decoration: none;
   text-transform: uppercase;
   font-family: $osb;
   font-size: 18px;
   box-sizing: border-box;
-  color: #444;
+  color: #444444;
   margin-top: 53px;
   margin-bottom: 40px;
 }
@@ -88,7 +86,7 @@
     &::after {
       position: absolute;
       content: "";
-      background-image: url(../img/icon-flag.svg);
+      background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       right: 4px;
       top: -15px;
@@ -188,4 +186,3 @@
     // height: 455px;
   }
 }
-

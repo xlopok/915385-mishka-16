@@ -4,7 +4,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url(../img/zigzag-line-desktop.png);
+    background-image: url("../img/zigzag-line-desktop.png");
     // background-repeat: no-repeat;
     height: 6px;
     width: 100%;
@@ -53,7 +53,7 @@
 
   &--reference {
     display: block;
-    color: #444;
+    color: #444444;
     font-size: 17px;
     line-height: 30px;
   }
@@ -74,12 +74,12 @@
   &--left:hover svg,
   &--left:focus svg,
   &--right:hover svg,
-  &--right:focus svg{
+  &--right:focus svg {
     opacity: 0.6;
   }
 
   &--left:active svg,
-  &--right:active svg{
+  &--right:active svg {
     opacity: 0.3;
   }
 
@@ -88,32 +88,31 @@
     content: "";
     height: 100%;
     width: 1px;
-    background-color: $light-gray;;
+    background-color: $light-gray;
   }
 }
 
 .review__button-feedback {
   width: 260px;
   margin: 0 auto;
-  color: $black;
   text-decoration: none;
   text-transform: uppercase;
   font-family: $osb;
   font-size: 18px;
   box-sizing: border-box;
-  color: #444;
+  color: #444444;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    background-image: url(../img/review@1x.jpg);
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     left: 0;
     top: 0;
     margin-top: -60px;
 
     &::after {
-      background-image: url(../img/bg-zigzag-line.svg);
+      background-image: url("../img/bg-zigzag-line.svg");
       height: 23px;
       bottom: -75px;
     }
@@ -142,13 +141,12 @@
   }
 
   .reviews__author {
-
     &--name {
       font-size: 18px;
     }
 
     &--reference {
-      padding-bottom: 50px;;
+      padding-bottom: 50px;
     }
   }
 
@@ -183,7 +181,7 @@
 
   .reviews__container {
     width: 1050px;
-    background-image: url(../img/review@1x.jpg);
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
@@ -219,5 +217,3 @@
     bottom: 99px;
   }
 }
-
-

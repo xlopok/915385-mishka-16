@@ -41,6 +41,9 @@
   display: block;
   position: relative;
   line-height: 18px;
+  font-family: $osb;
+  color: #62d1ba;
+  text-transform: uppercase;
 
   &--color {
     margin-bottom: 33px;
@@ -50,11 +53,11 @@
     margin-bottom: 9px;
   }
 
-  &--email{
+  &--email {
     margin-bottom: 9px;
   }
 
-  &--addition{
+  &--addition {
     margin-bottom: 24px;
   }
 
@@ -115,7 +118,6 @@
   &--interier::after {
     left: 12.5px;
     top: 9px;
-
   }
 
   &--kid::after {
@@ -125,25 +127,23 @@
 }
 
 .input-type ~ .form__main .labels__type {
-  &::after {display: none;}
+  &::after {
+    display: none;
+  }
 }
 
-#radio-interier:checked ~ .form__main .labels__type--interier {
+.input-type--interior:checked ~ .form__main .labels__type--interier {
   // &--kid::after,
-  &::after
-   {display: block;}
+  &::after {
+    display: block;
+  }
 }
 
-#radio-kid:checked ~ .form__main .labels__type--kid {
+.input-type--kid:checked ~ .form__main .labels__type--kid {
   // &--kid::after,
-  &::after
-   {display: block;}
-}
-
-.labels__header {
-  font-family: $osb;
-  color: #62d1ba;
-  text-transform: uppercase;
+  &::after {
+    display: block;
+  }
 }
 
 .labels__color {
@@ -151,10 +151,8 @@
   color: $black;
   display: block;
   padding-left: 63px;
-  margin-bottom: 18px;
   position: relative;
   margin-bottom: 39px;
-  position: relative;
 
   &::before {
     position: absolute;
@@ -175,20 +173,19 @@
 
     width: 35px;
     height: 23px;
-    background-image: url(../img/icon-tick.svg);
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     left: 4px;
     top: 0;
   }
 }
 
-#checkbox-white:checked ~ .form__main .labels__color--white,
-#checkbox-grey:checked ~ .form__main .labels__color--grey,
-#checkbox-tifany:checked ~ .form__main .labels__color--tifany ,
-#checkbox-black:checked ~ .form__main .labels__color--black ,
-#checkbox-pink:checked ~ .form__main .labels__color--pink ,
-#checkbox-orange:checked ~ .form__main .labels__color--orange  {
-
+.input-color--white:checked ~ .form__main .labels__color--white,
+.input-color--grey:checked ~ .form__main .labels__color--grey,
+.input-color--tifany:checked ~ .form__main .labels__color--tifany,
+.input-color--black:checked ~ .form__main .labels__color--black,
+.input-color--pink:checked ~ .form__main .labels__color--pink,
+.input-color--orange:checked ~ .form__main .labels__color--orange {
   &::after {
     display: block;
   }
@@ -225,7 +222,7 @@
   position: relative;
 
   &:hover::before {
-    background-image: url(../../img/icon-phone-green.svg);
+    background-image: url("../img/icon-phone-green.svg");
     opacity: 1;
   }
 
@@ -233,7 +230,7 @@
     position: absolute;
     content: "";
 
-    background-image: url(../../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
@@ -249,7 +246,7 @@
   position: relative;
 
   &:hover::before {
-    background-image: url(../../img/icon-mail-green.svg);
+    background-image: url("../img/icon-mail-green.svg");
     opacity: 1;
   }
 
@@ -257,7 +254,7 @@
     position: absolute;
     content: "";
 
-    background-image: url(../../img/icon-mail.svg);
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     width: 32px;
     height: 26px;
@@ -274,7 +271,6 @@
 
 .form__textarea {
   width: 100%;
-  border: none;
   border: 2px solid $black;
   font-size: 17px;
   padding-left: 17px;
@@ -305,11 +301,12 @@
     font-size: 43px;
     height: 226px;
     position: relative;
+    margin-bottom: 71px;
 
     &::after {
       position: absolute;
       content: "";
-      background-image: url(../img/bg-zigzag-fill.svg);
+      background-image: url("../img/bg-zigzag-fill.svg");
       width: 100%;
       height: 20px;
       bottom: 0;
@@ -318,15 +315,12 @@
 
   .form__container {
     width: 100%;
+    margin-bottom: 53px;
   }
 
   .form__wrap {
     // width: 668px;
     width: auto;
-  }
-
-  .form__header {
-    margin-bottom: 71px;
   }
 
   .form__type {
@@ -378,7 +372,6 @@
     margin-bottom: 45px;
 
     &--interier {
-
       &::before {
         width: 52px;
         height: 52px;
@@ -389,12 +382,11 @@
         width: 20px;
         height: 20px;
         left: 15.5px;
-        top: 0px;
+        top: 0;
       }
     }
 
     &--kid {
-
       &::before {
         width: 52px;
         height: 52px;
@@ -477,13 +469,14 @@
     padding-left: 20px;
     background-color: transparent;
   }
+
   .personal__wrap {
     display: flex;
     margin-bottom: 25px;
     width: 100%;
   }
 
-  .form_contacts-wrap{
+  .form_contacts-wrap {
     background-color: #f1f1f1;
     padding-top: 80px;
     padding-bottom: 52px;
@@ -492,11 +485,11 @@
   .form__phone {
     width: 668px;
     margin: 0 auto;
+    margin-bottom: 25px;
 
     &::before {
       right: 23px;
       top: 12px;
-
     }
   }
 
@@ -511,12 +504,8 @@
   }
 
   .form__phone,
-  .form__email  {
+  .form__email {
     display: flex;
-  }
-
-  .form__phone {
-    margin-bottom: 25px;
   }
 
   .form__addition {
@@ -538,17 +527,13 @@
     font-size: 17px;
     line-height: 30px;
     order: 2;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 6px;
   }
 
   .form__send {
     width: 230px;
     order: 1;
-  }
-
-  .form__container {
-    margin-bottom: 53px;
   }
 }
 
@@ -618,7 +603,6 @@
   }
 
   .input-personal {
-
     &--tel,
     &--email {
       box-sizing: border-box;
