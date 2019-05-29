@@ -1,0 +1,188 @@
+.contacts__container {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.contacts__wrap {
+  margin: 0 30px;
+}
+
+.contacts__map-drsktop {
+  display: none;
+}
+
+.contacts__header {
+  font-family: $osb;
+  font-size: 18px;
+  // padding-top: 12px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.contacts__text {
+  color: #444444;
+  font-size: 15px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.contacts__termin {
+  margin-right: 30px;
+}
+
+.contacts__email-link {
+  text-decoration: none;
+  color: #444444;
+
+  &:hover,
+  &:focus {
+    color: #62d1ba;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__description {
+  &--email {
+    border-bottom: 1px solid #62d1ba;
+  }
+}
+
+.contacts__iframe {
+  // width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contacts__map {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts__button-feedback {
+  width: 260px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $osb;
+  font-size: 18px;
+  box-sizing: border-box;
+  color: #444444;
+  margin-top: 53px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    width: 668px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      right: 4px;
+      top: -15px;
+      width: 47px;
+      height: 81px;
+    }
+  }
+
+  .contacts__wrap {
+    margin: 0;
+  }
+
+  .contacts__header {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 137px;
+    margin-bottom: 49px;
+  }
+
+  .contacts__text {
+    font-size: 17px;
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  .contacts__text-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .contacts__description {
+    &--email {
+      height: 30px;
+    }
+  }
+
+  .contacts__termin {
+    margin-right: 26px;
+  }
+
+  .contacts__button-feedback {
+    width: 230px;
+    margin-top: 57px;
+    margin-bottom: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-top: 234px;
+    margin-bottom: 107px;
+  }
+
+  .contacts__container {
+    width: 1050px;
+    position: relative;
+
+    &::after {
+      left: 63px;
+    }
+  }
+
+  .contacts__wrap {
+    margin-left: 175px;
+  }
+
+  .contacts__header {
+    font-size: 53px;
+  }
+
+  .contacts__text-wrap {
+    flex-direction: column;
+    margin-bottom: 56px;
+  }
+
+  .contacts__iframe {
+    display: none;
+  }
+
+  .contacts__button-feedback {
+    margin: 0;
+    margin-left: 175px;
+  }
+
+  .contacts__button-wrap {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .contacts__map-drsktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -70px;
+    width: 525px;
+    // height: 455px;
+  }
+}
